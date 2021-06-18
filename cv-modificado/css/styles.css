@@ -1,0 +1,118 @@
+/*estilo general*/
+
+
+
+body{
+    background-color:#efefef;
+    font-family:'Lato';
+}
+
+#pagina-secundaria{
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*estilos header*/
+
+header{
+    background-image: url("/FrontEnd1/cv-modificado/img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+
+#logo-principal{
+    display: block;
+    margin: auto;
+    width:240px ;
+    border-radius: 240px;
+    border-style: solid;
+    border-color: #efefef;
+    box-shadow: 2px 2px 30px rgb(0, 0, 0);
+}
+
+h1{
+    background-color:#333333;
+    padding: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+/*estilos seccion principal*/
+
+.contenido{
+    width: 1040px;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 25rem;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+ul{
+    line-height: 30px;
+   }
+
+h2{
+    font-size: 24px;
+    background-color:#055888;
+    padding: 8px;
+    color: #ffff;
+    font-weight: 800;
+}
+
+h3{
+    font-size: 18px;
+    display: inline;
+    font-weight:600;
+}
+span{
+    font-size:18px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+#sobre-mi{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #055888;
+    width: max-content;
+    padding: 5px;
+    background-color: #117fbe;
+    box-shadow: 1px 1px 5px #333333;
+    color: #efefef;
+    text-decoration-line: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin:auto;
+    margin-top: 10rem;
+}
+
+/*estilos footer*/
+
+footer{
+    background-color: #333333;
+    text-align: center;
+    margin-top: 18rem;
+    font-size: 16px;
+    color:#ffff;
+    padding: 10px;
+}
+
+
+a{
+    padding: 10px;
+    vertical-align: middle;
+}
+
+i{
+    color: #efefef;
+}
