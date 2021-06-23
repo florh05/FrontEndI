@@ -1,0 +1,108 @@
+
+body{
+    box-sizing:border-box;
+    font-family: 'Roboto' ,sans-serif;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+}
+nav{
+    background-color: #1CD1B0;
+    padding: 10px 0px 10px 10px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+h1{
+    background-color:#00669F;
+    padding: 26px 0px 26px 28px;
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    box-shadow: 3px 3px 5px #2e2e2e;
+}
+
+section{
+    height: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+}
+
+article{
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    background: #f3f3f3;
+    position:relative;
+    margin:16px;
+    box-shadow: 1px 1px 5px #2e2e2e;
+    border-radius:16px 16px 0px 0px;
+    overflow: hidden;
+}
+
+.heart{
+    position: absolute;
+    margin: 15px 21px;
+}
+
+.fondo{
+    height: 193px;
+    width: 300px;
+    margin: 0px;
+}
+
+.perfil{
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    margin: 0px;
+    position: absolute;
+    left: 100px;
+    top: 134px;
+    box-shadow: 1px 1px 5px #2e2e2e;
+}
+
+h2{
+    margin-top: 74px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.content{
+    padding: 0px 16px 0px 16px;
+    height: 180px;
+    font-size: 16px;
+}
+
+.button-div{
+    width: 100%;
+}
+
+button{
+    background-color: #00669F;
+    padding: 15px 35px;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    align-items: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 18px;
+}
+
+footer{
+    background-color: #00669F;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 16px;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing:border-box;
+}
