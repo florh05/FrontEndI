@@ -6,6 +6,16 @@ body{
     position: relative;
     margin: 0;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
 nav{
     background-color: #1CD1B0;
     padding: 10px 0px 10px 10px;
@@ -26,8 +36,7 @@ h1{
 section{
     height: 100%;
     text-align: center;
-    display: block;
-    margin-top: 30px;
+    margin-top: 20%;
 }
 
 article{
