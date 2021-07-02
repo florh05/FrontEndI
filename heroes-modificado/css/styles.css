@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+/**Sección BODY**/
+body{
+    font-family: 'Roboto' ,sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/**Sección HEADER**/
+header{
+    position: sticky;
+    top: 0;
+    margin: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+nav{
+    background-color: #1CD1B0;
+    padding: 0.60rem 0px 0.60rem 0.60rem;
+    margin: 0;
+    font-size:1rem;
+    font-weight: 400;
+}
+
+h1{
+    background-color:#00669F;
+    padding: 1.60rem 0px 1.60rem 1.75rem;
+    margin: 0;
+    font-size:2.5rem;
+    font-weight: 400;
+    box-shadow: 0.2rem 0.2rem 0.3rem #464646;
+}
+/**Sección CONTENIDO GENERAL**/
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    height: 100%;
+    width: 100%;
+    
+}
+/**CARDS**/
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18.75rem;
+    margin: 1rem;
+    background: #f3f3f3;
+    box-shadow: 0.2rem 0.2rem 0.5rem #464646;
+    border-radius:1rem 1rem 0rem 0rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.heart{
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+    margin: 0.9rem 1.3rem;
+
+}
+
+.fondo{
+    height: 12rem;
+    width: 18.75rem;
+    margin: 0;
+}
+
+.perfil{
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 3.75rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem #2e2e2e;
+    position: absolute;
+    top: 7.5rem;
+}    
+
+h2{
+    text-align: center;
+    font-size:1.8rem;
+    font-weight: 400;
+    margin-top: 4rem;
+}
+
+.content{
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 1rem;
+    height: 14rem;
+}
+
+.button-div{
+    width: 100%;
+    margin: 1rem;
+}
+
+button{
+    background-color: #00669F;
+    padding: 1rem 2rem;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    
+}
+
+#mas{
+    background-color: #00669F;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 0.4rem 0.72rem;
+    display: none;
+    font-weight: 700;
+    margin: 1.5rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem #2e2e2e;
+
+}
+/**Sección FOOTER**/
+footer{
+    background-color: #00669F;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 1rem;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#github{
+    height: 1.5rem;
+}
+
+/**MEDIA QUERIES**/
+
+/**tablet**/
+
+@media (max-width:768px) {
+    nav{
+        display: none;
+    }
+}
+
+/**smartphones**/
+
+@media (max-width:550px) {
+ .content{
+     display: none;
+ }
+
+ .button-div{
+     display: none;
+ }
+ #mas{
+     display: block;
+     align-self: flex-end;
+ }
+
+}
