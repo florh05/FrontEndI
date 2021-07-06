@@ -1,123 +1,190 @@
-@font-face {
-    font-family: 'Roboto', sans-serif;
-    src: url("../fonts/Roboto-Regular.ttf");
-}
-
 body{
-    font-family:'Roboto', sans-serif;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    
 }
-
 /*estilo HEADER*/
 
 #barra-superior{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.3rem;
 background-color: #222222;
 color: #f3f3f3;
-font-size: 10px;
+font-size: 0.6rem;
 font-weight: 400;
+}
+#idiomas li{
+    display: inline;
+    margin: 0.5rem;
 }
 
 #menu-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
     background-color:#F0A83E;
     color: #f3f3f3;
-    font-size: 13px;
+    font-size: 1.2rem;
     font-weight: 400;
-
+   
 }
+
+#menu-principal .material-icons{
+    display:none;
+}
+
+#menu li{
+    display: inline;
+    margin: 0.5rem;
+}
+
+
 
 /*estilo SECCIÓN BANNER*/
 
 #banner{
-    background-color: #ffffff;
+    background-image: url(../img/imagenPrincipal.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 30rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     text-align: center;
+    padding: 2rem;
 }
+
 
 #banner h2{
     color: #3C2313;
-    font-size: 30px;
+    background-color: #ffffff;
+    font-size: 2.5rem;
     font-weight: 400;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
 }
 
 #banner p{
     color: #3C2313;
-    font-size: 16px;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
 #banner button{
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1.2rem;
     font-weight: 400;
     background-color: #F0A83E;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     border: none;
-    padding: 15px 23px;
-    display:block;
-    margin: auto;
+    padding: 1rem 1.2rem;
+    
 }
 
 /*estilo SECCIÓN PRODUCTOS*/
 
+#productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+
 #productos h1{
     color: #3C2313;
-    font-size: 40px;
+    font-size: 3.5rem;
     font-weight: 700;
+    flex-grow: 0.5;
 }
 
 #tipologia{
     color: #666666;
-    font-size: 15px;
+    font-size: 1.2rem;
     font-weight: 400;
+    flex-grow: 0.3;
+}
+
+#ventas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item img{
+    height: 30rem;
+    border: solid 0.1rem #bdbdbd;
+    margin: 1rem;
 }
 
 .title{
     color: #3C2313;
-    font-size: 15px;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
 .price{
     color: #F0A83E;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 500;
 
 }
 /*estilo SECCIÓN CONTACTANOS*/
+#contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
 
 #contactanos h3{
     color: #3C2313;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight:700;
 }
 
 .form{
+    width: 30%;
     color: #ffffff;
-    font-size: 9px;
+    font-size: 0.6rem;
     font-weight: 400;
     background-color: #3C2313;
-    border-radius: 15px;
+    border-radius: 1rem;
     border: none;
-    margin: 10px;
-    padding: 15px 180px 15px 15px;
+    padding: 1rem;
+    text-align: left;
+    margin: 0.4rem;
 }
 
 #reset{
     background-color: #8a8787;
-    border-radius: 15px;
+    border-radius: 1rem;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     border: none;
-    padding: 8px 25px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
 }
 
 #send{
     background-color: #F0A83E;
-    border-radius: 15px;
+    border-radius: 1rem;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     border: none;
-    padding: 8px 33px;
+    padding: 0.5rem 1.5rem;
 }
 
 /*estilo SECCIÓN SUSCRIPCION*/
@@ -125,31 +192,46 @@ font-weight: 400;
 
 #suscripcion{
     background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+#suscripcion div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #suscripcion h4{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 700;
-    padding: 20px;
+    margin: 0.5rem;
 }
 
 #mail{
     background-color: #ffffff;
     color: #A0A0A0;
-    font-size: 9px;
+    font-size: 0.6rem;
     font-weight: 400;
-    padding: 14px 148px 14px 8px;
     border: none;
-    border-radius: 15px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align: left;
+        
 }
+
 #suscribe{
     background-color:#3C2313;
     color: #ffffff;
-    font-size: 9px;
+    font-size: 0.6rem;
     font-weight: 700;
-    padding: 12px;
-    border-radius: 15px;
+    border-radius: 1rem;
+    padding: 1rem;
     border: none;
 }
 
@@ -158,17 +240,25 @@ font-weight: 400;
 
 #datos{
     background-color: #3C2313;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.data,.dataImg{
+    margin: 1rem;
 }
 
 .datos-title{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .datos-subtitle{
     color: #8a8787;
-    font-size: 10px;
+    font-size: 0.8rem;
     font-weight: 700;
 }
 
@@ -178,8 +268,38 @@ font-weight: 400;
 footer{
     background-color: #222222;
     color: #ffffff;
-    font-size: 10px;
+    font-size: 0.8rem;
     font-weight: 700;
-    padding: 4px;
+    padding: 0.4rem;
     text-align: center;
+}
+
+/*MEDIA QUERIES*/
+
+/*Mobile*/
+
+@media (max-width: 480px) {
+    #barra-superior{
+        display: none;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    #datos{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+   }
+
+   .dataImg{
+       order: -1;
+   }
+
+   #menu-principal .material-icons{
+    margin: 0.5rem;
+    width: 2.5rem;
+    display: block;
+}
 }
