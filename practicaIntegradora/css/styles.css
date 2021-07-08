@@ -1,0 +1,145 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Roboto',sans-serif;
+    position: relative;
+}
+
+/**HEADER**/
+#nav-principal{
+    background-color: #1CD1B0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.4rem;
+}
+#nav-secundaria{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #00669F;
+    color:#ffffff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.1rem;
+}
+
+/**SECCION PRINCIPAL**/
+
+section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.5rem;
+        
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0.5rem;
+}
+
+/**FORMULARIO**/
+
+#formulario{
+    width: 30%;
+}
+
+input,select{
+    font-size: 1.2rem;
+    border: solid 1px #7a7a7a;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0.5rem;
+    background-color: #ffffff;
+    color: #2c2c2c;
+            
+}
+
+label{
+    font-size: 1rem;
+    color: #7a7a7a;
+    padding: 0.5rem;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    
+}
+
+#Entrar{
+    background-color:#1CD1B0;
+    font-size: 1.5rem;
+    color: #2c2c2c;
+    font-weight: 500;
+    border-radius: 0.8rem;
+    border: none;
+         
+}
+
+#Resetear{
+    background-color:#888888;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 0.8rem;
+    border: none;
+    flex-grow: 0.4;
+   
+}
+
+
+#Registrar{
+    background-color:#1CD1B0;
+    font-size: 1.5rem;
+    color: #2c2c2c;
+    font-weight: 500;
+    border-radius: 0.8rem;
+    border: none;
+    flex-grow: 0.4;
+   
+}
+
+#cuenta{
+    text-align: center;
+    font-size: 1rem;
+    color: #2c2c2c;
+}
+
+#contacto{
+    width: 100%;
+    margin: 0.5rem;
+}
+
+#area{
+    width: 100%;
+    height: 8rem;
+}
+/**FOOTER**/
+
+footer{
+    background-color: #00669F;
+    width: 100%;
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
